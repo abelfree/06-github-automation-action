@@ -1,0 +1,14 @@
+name: "Issue and PR Triage"
+description: "Auto-label issues and PRs using title/body keywords"
+author: "abelfree"
+inputs:
+  github-token:
+    description: "GitHub token"
+    required: true
+    default: "${{ github.token }}"
+runs:
+  using: "node20"
+  main: "dist/index.js"
+branding:
+  icon: "tag"
+  color: "blue"
